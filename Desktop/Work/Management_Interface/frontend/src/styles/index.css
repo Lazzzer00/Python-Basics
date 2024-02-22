@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+  html {
+    font-family: "Open sans", system-ui, sans-serif;
+  }
+  body {
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
