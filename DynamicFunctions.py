@@ -1,12 +1,12 @@
 # very powerful, very easy to misuse 
 
-def evaluation():
+def EVAL():
   x = 1
   expression = "x * 3 + x**2"
   result = eval(expression)
   assert result == 4
 
-def execution():
+def EXEC():
   code = """
 def greet(name):
   print(f"Hello, {name}!")
@@ -15,7 +15,7 @@ greet("Alice")
 """
   exec(code) # doesn't return anything
 
-def compilation(): # if you're executing something many times you might want to pre-compile it
+def COMPILE(): # if you're executing something many times you might want to pre-compile it
   code = 'print("Hello, World!")'
   compiledCode = compile(code, "<string>", "exec")
   exec(code)
@@ -57,5 +57,3 @@ def IMPORT(): # really dangerous, DONT USE UNLESS REALLY NECESSERY
   import importlib # a much prefered and user friendly way to do imports
   math3 = importlib.import_module("math")
   assert math3 is math is math2
-
-IMPORT()
