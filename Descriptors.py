@@ -1,5 +1,5 @@
 # these aren't really methods, but they rather say to the machine what the next part of the code will do
-def example_classmethod_property_staticmethod():
+def CLASSMETHOD_PROPERY_STATICMETHOD():
   class MyClass:
     def __init__(self, value):
       self._value = value
