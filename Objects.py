@@ -1,4 +1,4 @@
-def objectType():
+def OBJECT():
   sentinel = object()
   assert sentinel is not None
 
@@ -48,24 +48,24 @@ def ID():
   assert s1 is s1 # this is the same as id(s1) == id(s1)
   assert s1 is not s2
 
-def hashing(): # the hash number allows you to look up an object in a big hash table, without traversing the entire collection
+def HASH(): # the hash number allows you to look up an object in a big hash table, without traversing the entire collection
   obj = "Hello"
   objHash = hash(obj)
   assert objHash == hash("Hello") 
 
-def length():
+def LEN():
   numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
   length = len(numbers)
   assert length == 9
 
-def isInstance():
+def ISINSTANCE():
   value = 100
   assert isinstance(value, int)
   assert not isinstance(value, str)
 
   assert isinstance(False, int) # FUN FACT: In python , booleans are integers
 
-def isSubclass():
+def ISSUBCLASS():
   class Parent:
     pass
   class Child(Parent):
@@ -87,7 +87,7 @@ def Callable(): # checks if the thing you passed it is callable
   assert callable(obj.method)
   assert not callable("Hello World")
 
-def Superiority(): # goes one step back in inheritance hierarchy
+def SUPER(): # goes one step back in inheritance hierarchy
   class Parent:
     def greet(self):
       return "Hello from Parent"
@@ -98,12 +98,12 @@ def Superiority(): # goes one step back in inheritance hierarchy
   child = Child()
   assert child.greet() == "Hello from Parent, and hello from Child"
 
-def exampleType():
+def TYPE():
   number = 123
   typeOfNumber = type(number)
   assert typeOfNumber == int
 
-def exampleNewType(): # create your own type
+def NEWTYPECREATION(): # create your own type
   def greet(self):
     return f"Hello {self.name}!"
   
@@ -111,4 +111,6 @@ def exampleNewType(): # create your own type
   instance = NewType()
   assert instance.name == "World"
   assert instance.greet() == "Hello World!"
+
+
 
