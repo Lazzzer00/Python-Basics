@@ -1,14 +1,14 @@
-def strings():
+def STR():
   assert str(42) == "42"
   assert str(True) == "True"
   assert str(dict) == "<class 'dict'>"
 
-def chrOrd(): # 2 inverse functions
+def CHR_ORD(): # 2 inverse functions
   assert chr(65) == "A"
   assert ord("A") == 65
   assert chr(ord(100)) == 100
 
-def binOctHex(): # representations of numbers in binary, octary and hexary systems
+def BIN_HEX_OCT(): # representations of numbers in binary, octary and hexary systems
   assert bin(42) == "0b101010"
   assert oct(42) == "0o52"
   assert hex(42) == "0x2a"
@@ -17,7 +17,7 @@ def binOctHex(): # representations of numbers in binary, octary and hexary syste
   assert int("0o52", 8) == 42 # int can reverse this process by passing the base that was used as the second argument
   assert int("0x2a", 16) == 42
 
-def formating():
+def FORMAT():
   name = "Alice"
   age = 31
 
@@ -47,7 +47,7 @@ def formating():
         return "<SPECIAL>"
       return "<NORMAL>"
 
-def inputPrint(): # pauses your program until user enters at terminal
+def INPUT_PRINT(): # pauses your program until user enters at terminal
   name = input("Enter your name: ")
   assert isinstance(name, str)
   print(name)
