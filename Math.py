@@ -46,7 +46,7 @@ def ABS():
   assert abs(-10) == 10
   assert abs(10.0) == 10.0
   assert abs(3 + 4j) == 5 # for complex numbers it return the distance from the origin on the complex plane
-
+  # 3^2 + 4^2 = 5^2 
 def POW():
   assert 2**3 == 8
   assert pow(2, 3) == 8
