@@ -90,3 +90,7 @@ def SORT():
 
   people.sort(key = lambda x: len(x), reverse = False)
   assert people == ['Bob', 'John', 'Trump', 'Alice', 'alice'] # another example
+
+def IN(): # worse than sets for this O(n) complexity
+  assert 2 in [1, 2, 3] 
+  assert not 4 in [1, 2, 3]
